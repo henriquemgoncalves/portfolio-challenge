@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style/style_contato.css">
+    <script src="./app/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./assets/anterior.png" alt="imagem voltar"></a>
+        <div>
+            <nav>
+                <a href="skill.html">Skills & Hobbies</a>
+                <a href="formacao.html">Formação</a>
+                <a href="projeto.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contato">
+        <div class="conteudo__formulario">
+            <h1 class="titulo__contato">Contato</h1>
+            <p class="paragrafo__contato">Quer entrar em contato comigo?<br>
+                Preencha o formulário e entrarei em contato o mais rápido possível.</p>
+            <br>
+            <form id="formulario" onsubmit="return validarFormulario()">
+                <fieldset>
+                    <div class="elemento__caixa">
+                        <label>Nome</label>
+                        <input type="text" name="nome" id="nome">
+                        <span id="nomeError" class="error"></span>
+                    </div>
+
+                    <div class="elemento__caixa">
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+
+                    <div class="elemento__caixa">
+                        <label>Assunto</label>
+                        <input type="text" name="assunto" id="assunto">
+                        <span id="assuntoError" class="error"></span>
+                    </div>
+                    <br>
+
+                    <div class="caixa__botao">
+
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                        <span id="mensagemError" class="error"></span>
+                    </div>
+                    <div>
+                        <button class="botao__enviar" type="submit">Enviar Mensagem</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <img class="imagem__formulario" src="./assets/contato.jpg" alt="">
+        </div>
+
+    </section>
+    
+    <footer class="rodape__principal">
+        <p>Desenvolvido por Henrique.</p>
+        <p>2024</p>
+    </footer>
+</body>
+</html>

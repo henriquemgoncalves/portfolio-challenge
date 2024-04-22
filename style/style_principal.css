@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Cabecalho */
+header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(26, 25, 25));
+    top: 0;
+    filter: drop-shadow(3px 3px 3px #00fffd);
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(2px 2px 2px #00fffd);
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: #00fffd;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+header a:hover{
+    transform: scale(1.1,1.1);
+    color: #f6f6f6;
+    filter: drop-shadow(5px 5px 5px #00fffd);
+}
+
+/* Página PRINCIPAL */
+main{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(5, 6, 102), black);
+    color: #f6f6f6;
+    height: 100vh;
+}
+
+/*Conteúdo Principal */
+.container-principal{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.minha__foto{
+    padding: 10px;
+    border: solid 2px #f6f6f6;
+    border-radius: 100px;
+    filter: drop-shadow(3px 3px 3px #00fffd);
+    /* animation: flow 4s infinite ease-in-out; */
+}
+
+/*
+@keyframes flow{
+    0%{
+        border-radius: 80% 50% 70% 70% / 90% 70% 80% 50%;
+    }
+
+    35%{
+        border-radius: 80% 70% 90% 60% / 80% 70% 60% 90%;
+    }
+
+    75%{
+        border-radius: 70% 90% 60% 70% / 80% 90% 70% 90%;
+    }
+
+    100%{
+        border-radius: 80% 60% 60% 80% / 80% 60% 80% 60%;
+    }
+}
+*/
+
+.minha__foto:hover {
+    transform: scale(1.1,1.1);
+    filter: drop-shadow(5px 5px 5px #00fffd);
+   }
+
+.container-principal h2{
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container-principal strong{
+    color: #00d3d3;
+    font-size: 24px;
+    filter: drop-shadow(1px 1px 1px #f6f6f6);
+}
+
+.container-direito{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.principal__sociais{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;  
+}
+
+.links__social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #00fffd;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    filter: drop-shadow(1px 1px 1px #f6f6f6);
+}
+
+.links__social:hover{
+    transform: scale(1.1,1.1);
+    color: #f6f6f6;
+    filter: drop-shadow(5px 5px 5px #00fffd);
+}
+
+.imagem_links{
+    width: 20px;
+    height: 20px;
+}
+
+/* Rodapé PRINCIPAL */
+.rodape__principal{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(14, 13, 13), rgb(0, 0, 0));
+    color: #868484;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 740px){
+    header img{
+        display: none;
+    }
+
+    header{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header a{
+        font-size: 17px;
+    }
+
+    .principal__sociais{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 530px){
+    header a{
+        font-size: 90%;
+        color: #f6f6f6;
+        font-weight: 300;
+    }
+
+    .container-principal{
+        padding-top: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .minha__foto{
+        width: 200px;
+        height: auto;
+    }
+
+    /*
+
+
+    @keyframes flow{
+        0%{
+            border-radius: 80% 50% 70% 70% / 90% 70% 80% 50%;
+        }
+
+        35%{
+            border-radius: 80% 70% 90% 60% / 80% 70% 60% 90%;
+        }
+
+        75%{
+            border-radius: 70% 90% 60% 70% / 80% 90% 70% 90%;
+        }
+
+        100%{
+            border-radius: 80% 60% 60% 80% / 80% 60% 80% 60%;
+        }
+
+
+    }
+
+    */
+
+    .container-direito,
+    .container-principal h2,
+    .container-principal strong{
+        padding: 5px;
+        width: 100%;
+        gap: 20px;
+        font-size: 18px;
+    }
+}

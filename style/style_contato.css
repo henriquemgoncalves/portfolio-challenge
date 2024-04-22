@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Cabecalho */
+header{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(26, 25, 25));
+    top: 0;
+    filter: drop-shadow(3px 3px 3px #00fffd);
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(2px 2px 2px #00fffd);
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: #00fffd;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+header a:hover{
+    transform: scale(1.1,1.1);
+    color: #f6f6f6;
+    filter: drop-shadow(5px 5px 5px #00fffd);
+}
+
+/* Página PRINCIPAL */
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(5, 6, 102), black);
+    color: #f6f6f6;
+    height: 140vh;
+}
+
+/* CONTATO */
+.contato{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(5, 6, 102), black);
+    gap: 10px;
+    height: 100vh;
+}
+
+fieldset{
+    border: none;
+}
+
+.elemento__caixa, .caixa__botao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+.titulo__contato{
+    font-weight: 500;
+    font-size: 24px;
+    color: #f6f6f6;
+}
+
+label, .paragrafo__contato{
+    font-weight: 600;
+    font-size: 15px;
+    color: #f6f6f6;
+}
+
+.imagem__formulario{
+    width: 500px;
+    height: 400px;
+    border-radius: 100px;
+}
+
+.botao__enviar{
+    padding: 3px 25px;
+    text-decoration: none;
+    border: solid 2px #f6f6f6;
+    background-color: #018383;
+    color: #f6f6f6;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#nome,
+#email,
+#assunto,
+#mensagem{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.botao__enviar{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Rodapé PRINCIPAL */
+.rodape__principal{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(14, 13, 13), rgb(0, 0, 0));
+    color: #868484;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 960px){
+    header nav{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    header img{
+        padding: 3px;
+        width: 30px;
+        height: 30px;
+        filter: none;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nome,
+    #email,
+    #assunto,
+    #mensagem{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 533px){
+    
+
+    .contato{
+        padding-top: 50px;
+    }
+
+    .imagem__formulario{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
